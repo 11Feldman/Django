@@ -1,0 +1,13 @@
+{% extends 'tasks/layout.html'%}
+{% block body %}
+    <h1>Agregar Tarea:</h1>
+    
+    <form action="{% url 'TAREAS:index' %}" method="POST">
+    <!-- Se agrega el siguiente token CSRF que nos da seguridad a la hora de enviar datos-->
+        {% csrf_token %}
+        <!-- <input type="text", name="tarea">  -->
+        {{formulario_de_alta}}
+        <input type="submit">
+    </form>
+    <a href="{% url 'TAREAS:index' %}">Ir a tareas</a>
+{% endblock %}

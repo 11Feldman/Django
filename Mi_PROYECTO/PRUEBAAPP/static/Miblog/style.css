@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: 
+        radial-gradient(black 2px, transparent 6px), 
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0), 
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), 
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        white;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.title {
+    padding: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    gap: 1.6em;
+    margin: 1.6em auto;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .footer, 
+.container > div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow:20px 20px 50px grey; 
+}
+
+.container>.header,
+.container>.footer{
+    grid-column: 1/-1;
+    background-color:darkgray;
+}
+
+.container>.header{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.header .name{
+    grid-column: 1/4;
+}
+
+.container>.header>.picture img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 65px;
+}
+
+.container>.content{
+    grid-column: 1/4;
+}
+
+article{
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+}
+
+article h1{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+article h5{
+    margin: 10px;
+    text-align: left;
+}
+
+article:hover{
+    border: 2px solid black;
+}
+
+.container>.sidebar{
+    grid-column: 4/5;
+}
+
+.container>.footer{
+    box-shadow:20px 20px 50px grey; 
+    text-transform: uppercase;
+}
+
+.redsocial{
+    width:48px;            
+    position:fixed;
+    top:50px;
+    right:15px;
+}
+
+.redsocial img{
+    width: 48px;
+    height: 48px;
+}
+
+.redsocial{
+	top:50%;
+	height:205px;
+    margin-top:-100px;
+}
+
+.sidebar{
+    box-shadow:20px 20px 50px grey; 
+}
+
+
+.investment,
+.sports,
+.news,
+form{
+    margin: 15px;
+}
+
+.siteinterest li {
+   /*background: #fff url("icon-rssfeed.gif") 0 3px no-repeat;*/
+   list-style-type: "-->";
+   padding: 0 0 5px 15px;
+   font-size: small;
+}
+
+form{
+	border-radius:8px;
+	background-color:#ccc;
+    padding: 10px;
+}
+
+form label{
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	padding:3px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	padding:8px 16px;
+	margin-top:16px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+textarea{
+	width:100%;
+	border:1px solid #f6f6f6;
+	border-radius:4px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}

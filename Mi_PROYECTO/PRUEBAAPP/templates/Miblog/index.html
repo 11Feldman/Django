@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Miblog/style.css' %}">
+    <title>Mi blog personal</title>
+</head>
+
+<body>
+
+    <header class="title">
+        <h1>
+            Mi blog personal
+        </h1>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <div class="name">
+                <h1>Ariel Martin Feldman</h1>
+            </div>
+            <div class="picture">
+                <img src="Miblog/img/Avatar.jpg" alt="Avatar">
+            </div>
+        </div>
+
+        <main class="content">
+            <article>
+                <h1>ABOUT ME</h1>
+                <h5>Public 30/05/2021</h5>
+                <p> I introduce myself, I am ariel feldman, for those who know me, they usually call me Ari.
+                    This is my first project in the field of web development, the creation of my blog, obviously at the
+                    beginning this blog
+                    will have a beginner style but with the passage of time I will be including different interesting
+                    articles about my
+                    tastes or different topics that are of interest to me .
+                    I will do the blog entirely in English, since I believe that it is one of the best practices to
+                    improve the language to
+                    be able to work for foreign companies in the future.
+                    Today I am studying the career of Systems Analyst at IFTS16, in turn my work is related to this
+                    career.
+                    My interests are in sports, investments, machine learning, data analysis and, as a good Argentine,
+                    getting together with
+                    my friends to eat barbecue.
+                </p>
+            </article>
+            <article>
+                <h1>What are cryptocurrencies, a fashionable investment element</h1>
+                <h5>Public 30/05/2021</h5>
+                <p>Cryptocurrencies are global, virtual and decentralized currencies that give full control to their
+                    users Although it seems like a new concept, cryptocurrencies have been in circulation for more than
+                    two decades Investing in cryptocurrencies is high risk but allows you to reap great benefits
+                    Cryptocurrencies, cryptocurrencies or crypto assets are global, virtual and decentralized currencies
+                    that allow you to acquire goods and services safely and without intermediaries. Being a
+                    non-centralized currency, they are not very susceptible to variables such as the economy or politics
+                    of a country. In addition, those who control them is the cryptocurrency user himself and not any
+                    financial or government entity. Although the concept of cryptocurrency seems relatively new, the
+                    truth is that this type of currency has been in circulation for more than two decades. In 1983 the
+                    first electronic monetary cryptographic system emerged, created by David Chaum, called ecash.
+                    Subsequently, DigiCash was implemented, which was used to carry out anonymous transactions but with
+                    a centralized system that required software that avoided its traceability. Later, in 2009, the true
+                    cryptocurrency boom began to originate after the creation of Bitcoin, the first digital currency.
+                </p>
+            </article>
+        </main>
+
+        <div class="sidebar">
+            <ul class="siteinterest">
+                <ol class="investment">
+                    <h3>Investments</h3>
+                    <li>
+                        <a href="https://www.binance.com/">Binance</a>
+                    </li>
+                    <li>
+                        <a href="https://www.investing.com/">Investing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.iprofesional.com/">iProfesional</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bloomberg.com/">Bloomberg</a>
+                    </li>
+                </ol>
+                <ol class="sports">
+                    <h3>Sports</h3>
+                    <li>
+                        <a href="https://www.ole.com.ar/">Ole</a>
+                    </li>
+                    <li>
+                        <a href="https://www.marca.com/">Marca</a>
+                    </li>
+                    <li>
+                        <a href="https://www.as.com/">AS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.mercafutbol.com/">Merca futbol</a>
+                    </li>
+                </ol>
+                <ol class="news">
+                    <h3>News</h3>
+                    <li>
+                        <a href="https://www.infobae.com.ar/">infobae</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bbc.com/">BBC</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nytimes.com/">The New York Times</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lanacion.com.ar/">La Nacion</a>
+                    </li>
+                </ol>
+            </ul>
+
+            <h3>Contact me</h3>
+            <form action="#" target="" method="get">
+                <label for="name">Name:</label>
+                <input type="text" name="typeName" id="name" placeholder="Introduce your name" />
+
+                <label for="mail" />Email:</label>
+                <input type="email" name="email" id="mail" placeholder="jack@hotmail.com" required />
+
+                <!--
+                <label for="msg">Message:</label>
+                <textarea name="message" id="msg"
+                placeholder="you can write a maximum of 300 characters" maxlength="300"></textarea>
+                -->
+                <input type="submit" name="subscription" value="subscribe" />
+            </form>
+
+        </div>
+
+        <div class="footer">
+            <p>
+                site created by <b> ariel feldman </b> on <time datetime="dd-mm-yyy">28/05/2021</time> all rights
+                reserved 2021-2021
+            </p>
+        </div>
+
+    </div>
+
+    <div class="redsocial">
+        <a href="https://www.facebook.com/">
+            <img src="img/facebook.png" alt="facebook"></a>
+        <a href="https://www.youtube.com/">
+            <img src="img/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img src="img/wazap.png" alt="wazap">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="img/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img src="img/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.twitter.com/">
+            <img src="img/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.github.com/">
+            <img src="img/github.png" alt="github">
+        </a>
+    </div>
+
+
+</body>
+
+</html>
