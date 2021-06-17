@@ -4,8 +4,6 @@ from django import forms
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 
-#tareas = ['Despertarse', 'Desayunar', 'Lanzar Robot', 'Banarse','Cocinar']
-
 # Usando session para tomar los datos.
 class NewTask(forms.Form):
     tarea = forms.CharField(label='')
