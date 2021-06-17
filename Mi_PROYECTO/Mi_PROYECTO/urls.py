@@ -23,7 +23,7 @@ urlpatterns = [
     #Admin nos permite acceder al gestor administrativo de nuestro proyecto
     path('admin/', admin.site.urls),
     # Nos permite direccionarnos a nuestra PRUEBAAPP
-    path('PRUEBAAPP/', include('PRUEBAAPP.urls') ),
-    path('ANIONUEVO/', include('ANIONUEVO.urls') ),
-    path('TAREAS/', include( 'TAREAS.urls' ))
+    path('PRUEBAAPP/', include('PRUEBAAPP.urls')),
+    path('ANIONUEVO/', include('ANIONUEVO.urls')),
+    path('TAREAS/', include('TAREAS.urls'))
 ]
